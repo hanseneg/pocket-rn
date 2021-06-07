@@ -18,20 +18,20 @@ export default function Navbar(){
     return (
         <div className='header'>
             <div>
-                <div className='logo'>
-                    <img src='https://pocketrn.com/static/media/Logo.b9fcd954.png' alt='logo' />
+                <div>
+                    <img className='logo' src='https://pocketrn.com/static/media/Logo.b9fcd954.png' alt='logo' />
                 </div>
 
-                <div onClick={handleClick}>
+                <div className='menu' onClick={handleClick}>
                     {click ? (
-                        <OpenMenu />
-                    ) : (
                         <CloseMenu />
+                    ) : (
+                        <OpenMenu />
                     )}
                 </div>
 
-                <ul className={click ? 'options-open' : 'options-closed'}>
-                    <li>Home</li>
+                <ul className= {click ? 'options-closed' : 'options-open'} >
+                    <li className='home' >Home</li>
                     <li>Patients</li>
                     <li>Caregivers</li>
                     <li>Nurses</li>
