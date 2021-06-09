@@ -28,13 +28,13 @@ export default function Navbar(){
             </div>
             <div className='list'>
                 <ul onClick={closeMenu} className= {click ? 'options active' : 'options'} >
-                    <li className='home'>Home</li>
-                    <li>Patients</li>
-                    <li>Caregivers</li>
-                    <li>Nurses</li>
-                    <li>Healthcare Providers</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li className='home'><span>Home</span></li>
+                    <li><span>Patients</span></li>
+                    <li><span>Caregivers</span></li>
+                    <li><span>Nurses</span></li>
+                    <li><span>Healthcare Providers</span></li>
+                    <li><span>About</span></li>
+                    <li><span>Contact</span></li>
                     <li className='signup' >
                         <button>SIGN UP / LOG IN</button>
                     </li>

@@ -44,9 +44,8 @@
       margin: 15px;
       cursor: pointer;
   }
-  li:hover {
-    text-decoration: solid;
-      /* border-bottom: 4px solid rgb(175, 25, 82); */
+  span:hover {
+      border-bottom: 4px solid rgb(175, 25, 82);
   }
   .menu {
       float: right;
