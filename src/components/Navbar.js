@@ -13,37 +13,33 @@ export default function Navbar(){
     function closeMenu(){
         setClick(false)
     }
-    
 
     return (
         <div className='header'>
             <div>
-                <div>
-                    <img className='logo' src='https://pocketrn.com/static/media/Logo.b9fcd954.png' alt='logo' />
-                </div>
-
-                <div className='menu' onClick={handleClick}>
-                    {click ? (
-                        <CloseMenu />
-                    ) : (
-                        <OpenMenu />
-                    )}
-                </div>
-
-                <ul className= {click ? 'options-closed' : 'options-open'} >
-                    <li className='home' >Home</li>
+                <img className='logo' src='https://pocketrn.com/static/media/Logo.b9fcd954.png' alt='logo' />
+            </div>
+            <div className='menu' onClick={handleClick}>
+                {click ? (
+                    <CloseMenu />
+                ) : (
+                    <OpenMenu />
+                )}
+            </div>
+            <div className='list'>
+                <ul onClick={closeMenu} className= {click ? 'options active' : 'options'} >
+                    <li className='home'>Home</li>
                     <li>Patients</li>
                     <li>Caregivers</li>
                     <li>Nurses</li>
                     <li>Healthcare Providers</li>
                     <li>About</li>
                     <li>Contact</li>
-                    <li>SIGN UP / LOG IN</li>
+                    <li className='signup' >
+                        <button>SIGN UP / LOG IN</button>
+                    </li>
                 </ul>
-
             </div>
-
         </div>
-        
     )
 }
