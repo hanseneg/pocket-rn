@@ -25,7 +25,16 @@
       opacity: 1;
       margin-left: -40px;
       background-color: white;
+      margin-top: 10px;
+      height: 100%;
+      width: 100%;
   } 
+  .options.active .home {
+    margin-top: 50px;
+  }
+  .options.active li {
+    margin-left: 50px;
+  }
   ul {
       list-style: none;
       margin-right: 20px;
@@ -36,15 +45,16 @@
       cursor: pointer;
   }
   li:hover {
-      border-bottom: 4px solid rgb(175, 25, 82);
+    text-decoration: solid;
+      /* border-bottom: 4px solid rgb(175, 25, 82); */
   }
   .menu {
       float: right;
       margin-top: -40px;
   }
   .signup {
-      position: absolute;
-      bottom: -200px;
+      position: fixed;
+      bottom: 0;
   }
   .signup:hover {
       border-bottom: none;
